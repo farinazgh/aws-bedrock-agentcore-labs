@@ -3,7 +3,7 @@ name = "aws-bedrock-agentcore-labs"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "bedrock-agentcore>=1.7.0",
     "bedrock-agentcore-starter-toolkit>=0.3.6",
@@ -12,4 +12,16 @@ dependencies = [
     "openai>=2.33.0",
     "openai-agents>=0.14.8",
     "python-dotenv>=1.2.2",
+]
+
+[tool.setuptools]
+py-modules = [
+  "app",
+  "calculator_agent",
+  "config",
+  "create_openai_vector_store",
+  "data_agent",
+  "guardrails",
+  "main",
+  "vector_store"
 ]
