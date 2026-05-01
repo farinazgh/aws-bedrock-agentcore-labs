@@ -1,9 +1,8 @@
-agentcore configure -e .\app.py
+agentcore configure -e .\luna.py
 agentcore deploy
 agentcore status
 
-
-$env:OPENAI_API_KEY="your_actual_api_key_here"
+$env:OPENAI_API_KEY="YOUR_OPENAI_API_KEY_HERE"
 agentcore launch --env OPENAI_API_KEY=$env:OPENAI_API_KEY
 
 $payload = @{ prompt = "Data, who was Lal?" } | ConvertTo-Json -Compress

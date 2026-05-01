@@ -16,7 +16,7 @@ dependencies = [
 
 [tool.setuptools]
 py-modules = [
-  "app",
+  "luna",
   "calculator_agent",
   "config",
   "create_openai_vector_store",

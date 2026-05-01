@@ -2,6 +2,6 @@
   "timestamp": "2026-04-30T17:04:03.166Z",
   "level": "INFO",
   "message": "Invocation completed successfully (4.290s)",
-  "logger": "bedrock_agentcore.app",
+  "logger": "bedrock_agentcore.luna",
   "requestId": "2af21bbb-0348-4ae3-9474-0c76f511750f"
 }

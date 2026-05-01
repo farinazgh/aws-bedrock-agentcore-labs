@@ -1,5 +1,5 @@
 FROM ghcr.io/astral-sh/uv:python3.14-bookworm-slim
-WORKDIR /luna
+WORKDIR /app
 
 # All environment variables in one layer
 ENV UV_SYSTEM_PYTHON=1 \
