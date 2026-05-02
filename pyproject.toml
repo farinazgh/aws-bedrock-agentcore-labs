@@ -8,6 +8,7 @@ dependencies = [
     "bedrock-agentcore>=1.7.0",
     "bedrock-agentcore-starter-toolkit>=0.3.6",
     "black>=26.3.1",
+    "boto3>=1.42.97",
     "isort>=8.0.1",
     "openai>=2.33.0",
     "openai-agents>=0.14.8",
