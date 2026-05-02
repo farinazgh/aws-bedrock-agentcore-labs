@@ -12,3 +12,10 @@ agentcore invoke $payload
 #Next steps:
 #  • Run 'agentcore configure --entrypoint <file>' to set up a new agent
 #  • Run 'agentcore deploy' to deploy to Bedrock AgentCore
+
+# Pool ID: eu-west-1_evUpJWE9u
+# Discovery URL: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_evUpJWE9u/.well-known/openid-configuration
+# Client ID: 7uulv7ejpvci97e2cu5ebteu6a
+# Bearer Token: "bearer token here"
+
+ agentcore invoke $payload --bearer-token="bearer-token"

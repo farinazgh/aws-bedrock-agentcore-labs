@@ -1,4 +1,4 @@
-default_agent: luna
+default_agent: andromeda
 agents:
   luna:
     name: luna
@@ -55,6 +55,70 @@ agents:
       issuer_url: null
       duration_seconds: 300
     authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
+  andromeda:
+    name: andromeda
+    language: python
+    node_version: '20'
+    entrypoint: C:/polaris/code/aws-bedrock-agentcore-labs/luna.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: C:\polaris\code\aws-bedrock-agentcore-labs
+    aws:
+      execution_role: arn:aws:iam::339712939282:role/AmazonBedrockAgentCoreSDKRuntime-eu-west-1-09b6d2197b
+      execution_role_auto_create: false
+      account: '339712939282'
+      region: eu-west-1
+      ecr_repository: 339712939282.dkr.ecr.eu-west-1.amazonaws.com/bedrock-agentcore-andromeda
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: andromeda-tev8RY3tuz
+      agent_arn: arn:aws:bedrock-agentcore:eu-west-1:339712939282:runtime/andromeda-tev8RY3tuz
+      agent_session_id: b672d0d6-ead8-4e13-82b8-70af03aa04e7
+    codebuild:
+      project_name: bedrock-agentcore-andromeda-builder
+      execution_role: arn:aws:iam::339712939282:role/AmazonBedrockAgentCoreSDKCodeBuild-eu-west-1-09b6d2197b
+      source_bucket: bedrock-agentcore-codebuild-sources-339712939282-eu-west-1
+    memory:
+      mode: NO_MEMORY
+      memory_id: null
+      memory_arn: null
+      memory_name: null
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration:
+      customJWTAuthorizer:
+        discoveryUrl: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_evUpJWE9u/.well-known/openid-configuration
+        allowedClients:
+        - 7uulv7ejpvci97e2cu5ebteu6a
     request_header_configuration: null
     oauth_configuration: null
     api_key_env_var_name: null
